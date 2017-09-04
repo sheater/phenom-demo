@@ -1,0 +1,16 @@
+// tsconfig.json
+{
+	"compilerOptions": {
+		"baseUrl": "./src",
+		"target": "es2015",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true
+	},
+
+	"exclude": [
+		"node_modules"
+	]
+}
