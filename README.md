@@ -8,7 +8,7 @@ Three.js FPS game like tech demo, originally made for internal quarter presentat
 2. Install dev server:
 `npm i -g webpack-dev-server`
 
-3. Run web server:
+3. Run dev server:
 `webpack-dev-server`
 
 ## Bullshit
