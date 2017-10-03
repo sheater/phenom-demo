@@ -189,13 +189,6 @@ export default class AIController extends ActorController {
 
 		const playerDist = actor.position.distanceTo(player.position);
 
-		if (!actor.canSeeTarget(player.position)) {
-			console.log('i cant see ya');
-		}
-		else {
-			console.log('i can see ya');
-		}
-
 		if (playerDist > ATTACK_RADIUS || !actor.canSeeTarget(player.position)) {
 			this.switchStateTo(EAIBotState.HUNT);
 			return;

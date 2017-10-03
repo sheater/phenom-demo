@@ -7,6 +7,13 @@ import World from './../World';
 export default class Item extends Moveable {
     constructor(world: World, protected textureFilename: string) {
         super(world);
+
+        this.collisionOptions = {
+            isSolid: false,
+            canCollide: true,
+            canCollideWithBrushesOnly: false,
+            size: new THREE.Vector3(0.5, 0.5, 0.5),
+        };
     }
 
     async loadResources () {
@@ -26,6 +33,8 @@ export default class Item extends Moveable {
     }
 
     frame(delta: number) {
+        super.frame(delta);
+
         if (this.mesh) {
             this.mesh.rotation.y += delta * 3;
         }

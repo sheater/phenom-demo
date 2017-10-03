@@ -4,6 +4,7 @@ import Entity from './Entity';
 import Brush from './Brush';
 import ModelEntity from './ModelEntity';
 import { lineBoxIntersection } from './utils';
+import Ammo from './items/Ammo';
 // import Projectile from './Projectile';
 declare const Projectile: any;
 
